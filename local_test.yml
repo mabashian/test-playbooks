@@ -1,0 +1,18 @@
+---
+- name: testing local with conditional
+  hosts: all
+  gather_facts: no
+#  any_errors_fatal: yes
+  tasks:
+
+#  - debug: msg="{{ ansible_user}}"
+  - name: hostname
+    shell: 'id'
+    register: stuff
+    when: foo==false
+  - name: uptime
+    shell: 'uptime'
+    register: output
+    when: foo==false
+  - debug: msg="{{ output}}"
+    when: foo==false
