@@ -1,4 +1,5 @@
 ---
-tasks:
-  - name: Foobar
-    template: src=foo.j2 dest=/etc/foo
+- name: Foo test
+  tasks:
+    - name: Foobar
+      template: src=foo.j2 dest=/etc/foo
