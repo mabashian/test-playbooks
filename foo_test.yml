@@ -1,5 +1,6 @@
 ---
 - name: Foo test
+  hosts: all
   tasks:
     - name: Foobar
       template: src=foo.j2 dest=/etc/foo
