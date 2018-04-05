@@ -3,4 +3,4 @@
   hosts: all
   tasks:
     - name: Foobar
-      template: src=foo.j2 dest=/Users/mabashian/Documents/Ansible/foo.txt
+      template: src=foo.j2 dest=/tmp/foo.txt
