@@ -1,5 +1,5 @@
 # {{ ansible_managed }}
 
-{% for line in all_sudo_files[lines] %}
+{% for line in all_sudo_files[item] %}
 {{ line }}
 {% endfor %}
