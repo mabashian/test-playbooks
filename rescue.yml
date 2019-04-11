@@ -1,0 +1,11 @@
+---
+- hosts: all
+  serial: 1
+  gather_facts: no
+  tasks:
+
+  - block:
+      - fail:
+    rescue:
+      - debug:
+          msg: "Rescue"
