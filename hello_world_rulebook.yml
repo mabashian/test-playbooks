@@ -1,0 +1,12 @@
+---
+- name: Hello World Rulebook
+  hosts: all
+  sources:
+    - ansible.eda.range:
+        limit: 1
+  rules:
+    - name: Say Hello
+      condition: event.i == 0
+      action:
+        debug:
+          msg: "Hello World from Ansible Rulebook!"
